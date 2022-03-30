@@ -1,6 +1,7 @@
 body{
     background-color: rgb(18, 3, 46);
     display: flex;
+    flex-direction: column;
 }
 
 h1{
@@ -13,7 +14,7 @@ h1{
     letter-spacing: 2px;
     
 }
-.container{
+.ramon{
     background-color: gray;
     height: 500px;
     width: 400px;
@@ -53,13 +54,18 @@ button {
     box-shadow: 0 15px 25px rgba(22, 22, 22, 0.6);
 }
 #tasks{
-    background-attachment: scroll;
-    background: transparent;
     height: 200px;
     width: 250px;
     margin-left: 15%;
     border-radius: 3px;
     border: 1px solid black;
     margin-top: 20px;
+    flex-direction: column;
+    color: white;
 
+}
+
+:checked + label{
+    text-decoration: line-through;
+    color: bisque;
 }
